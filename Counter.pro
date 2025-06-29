@@ -1,5 +1,6 @@
 QT -= gui
 
+DESTDIR += bin
 CONFIG += c++11 console
 CONFIG -= app_bundle
 
@@ -22,3 +23,8 @@ HEADERS += \
     window.h
 
 QT += widgets
+
+OBJECTS_DIR = tmp
+RCC_DIR = $$OBJECTS_DIR
+MOC_DIR = $$OBJECTS_DIR
+UI_DIR  = $$OBJECTS_DIR
